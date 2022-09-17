@@ -29,6 +29,11 @@ class Programme:
         repr=True,
         compare=True,
     )
+    synopsis: str = field(
+        init=True,
+        repr=True,
+        compare=True
+    )
     season: str = field(
         init=True,
         repr=True,

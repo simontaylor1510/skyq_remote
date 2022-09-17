@@ -205,6 +205,7 @@ class RecordingsInformation:
     def _build_recording(self, recording):
         channel = recording["cn"]
         title = recording["t"]
+        synopsis = recording["sy"]
 
         season = None
         episode = None
