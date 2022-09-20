@@ -256,6 +256,7 @@ class RecordingsInformation:
             starttime,
             endtime,
             title,
+            synopsis,
             season,
             episode,
             image_url,

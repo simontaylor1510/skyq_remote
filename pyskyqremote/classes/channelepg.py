@@ -91,6 +91,7 @@ class ChannelEPGInformation:
             starttime = datetime.utcfromtimestamp(programme["st"])
             endtime = datetime.utcfromtimestamp(programme["st"] + programme["d"])
             title = programme["t"]
+            synopsis = programme['sy']
             season = None
             if "seasonnumber" in programme and programme["seasonnumber"] > 0:
                 season = programme["seasonnumber"]
@@ -113,6 +114,7 @@ class ChannelEPGInformation:
                 starttime,
                 endtime,
                 title,
+                synopsis,
                 season,
                 episode,
                 image_url,
